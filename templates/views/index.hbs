@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home | Contest-Finder</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {{!-- facicon --}}
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <!-- fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600&family=Open+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <h3 class="brand-title">CF Contest Finder</h3>
+            <div class="navbar-buttons">
+                <a class="active" href="/">Home</a>
+                <a href="/howto">How To</a>
+                <a href="/about">About</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="home-content">
+        <form id="search-form" action="#">
+            <div>
+                <input id="input1" class="search-item" type="text" placeholder="Codeforces Handle">
+                <span class="vs-component">V/S</span>
+                <input id="input2" class="search-item" type="text" placeholder="Codeforces Handle">
+                <div class="search-radio">
+                    <br>
+                    <div class="radio-button">
+                        <input type="radio" name="contest-type" value="1">
+                        <label for="d1">Div. 1</label>
+                    </div>
+                    <div class="radio-button">
+                        <input type="radio" name="contest-type" value="2">
+                        <label for="d2">Div. 2</label>
+                    </div>
+                    <div class="radio-button">
+                        <input type="radio" name="contest-type" value="3">
+                        <label for="d3">Div. 3</label> 
+                    </div>
+                    <div class="radio-button">
+                        <input type="radio" name="contest-type" value="0">
+                        <label for="other">Any&nbsp;&nbsp;&nbsp;</label> <br>
+                    </div>
+                </div>  
+                <button class="search-item" type="submit">Find Contest</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="search-results">
+        <p id="searchResultsP">Search Results</p>
+        <a id="message1" class="messageLinks" href="#" target="_blank"></a>
+        <a id="message2" class="messageLinks" href="#" target="_blank"></a>
+        <a id="message3" class="messageLinks" href="#" target="_blank"></a>
+    </div>
+
+    <footer>
+        © Copyright 2020, All Rights Reserved
+    </footer>
+    
+    {{!-- js --}}
+    <script src="/js/script.js" defer></script>
+</body>
+
+</html>
